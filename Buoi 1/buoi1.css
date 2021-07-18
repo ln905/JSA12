@@ -1,0 +1,230 @@
+/*Phan Chung*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin-top: 0.25vh;
+    margin-bottom: 0.25vh;
+    margin-left: 15vh;
+    font-size: 6vh;
+    font-weight: lighter;
+    color: whitesmoke;
+
+}
+
+b {
+    font-weight: lighter;
+}
+
+button {
+    margin-top: 2vh;
+    font-size:2vh;
+    height: 6vh;
+    width: 18vh;
+    border-radius: 2.5vh;
+    border-color: rgb(255,165,0);
+    border-width: 0.3vh;
+    border-style:solid;
+}
+
+
+h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 5vh;
+    margin: 2vh
+}
+
+hr {
+    border:none;
+    width: 15vh;
+    height: 0.5vh;
+    background-color: rgb(255,165,0);
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+h5 {
+    text-align: justify;
+    font-size: 2vh;
+    font-weight: 400;
+    margin-top: 1vh;
+}
+
+input {
+    width: 50vh;
+}
+/*Phan Gioi Thieu*/
+#bartext {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight:bold; 
+    margin-bottom: 3vh;
+    margin-left: 0vh;
+    margin-right: 12vh;
+}
+
+.bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30vh;
+}
+
+.introduction {
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    background-image: url(P1.png);
+    max-width: 200vh;
+    height: 105vh;
+
+}
+ 
+.reslogo {
+    width: 30vh;
+    margin-right: 15vh;
+    margin-left: 20vh;
+}
+
+
+.btn1{
+    background-color: rgb(255,165,0);
+    color: white;
+    margin-left: 15vh;
+}
+
+.btn2 {
+    background-color:  transparent;
+    color:  rgb(255,165,0);
+}
+
+/*Phan 1*/
+#textP1 {
+    margin-left: 55vh;
+    margin-bottom: 0.1vh;
+}
+
+#basicInfo {
+    max-width: 30vh;
+    margin: 2vh;
+}
+
+.infoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imglist {
+width: 25%;
+}
+
+.foodList {
+    background-color: rgb(240,240,240);
+display: flex;
+flex-wrap: wrap;
+margin-top: 2vh;
+margin-bottom:2vh;
+}
+
+/*Phan 2*/
+.part2 > h2 {
+    margin-top: -2vh;
+}
+
+.part2 {
+    background-color: rgb(240,240,240);
+}
+
+.phone {
+    height: 100vh
+}
+
+#download{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1px;
+    border: none;
+    margin-left: 0vh;
+}
+
+.download1 {
+    background-image: url(GooglePlay.png)
+}
+
+.download2 {
+    background-image: url(AppStore.png)
+}
+
+.where2Download {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#textP3{
+    width: 50vh;
+    font-weight: 400;
+    margin-left: 0;
+    font-size: 3vh
+}
+
+#star {
+    height:5vh;
+}
+
+#boxP3{
+    margin-bottom: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Phan 3*/
+.part3 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+}
+
+.contact {
+    width: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+        justify-items: center;
+}
+
+.send-btn{
+    background-color: rgb(255,165,0);
+    color:white
+}
+
+#report {
+    height: 8vh;
+    margin-left: 13vh;
+}
+
+#contactList {
+    margin-top: 3vh;
+}
+
+#name {
+    margin-left: 20vh;
+}
+
+#email {
+    margin-left: 20.5vh;
+}
+
+/*Phan 4*/
+.part4 {
+    background-color: black;
+    margin: 0vh;
+    height: 20vh; 
+    color: rgb(131, 131, 131)
+}
