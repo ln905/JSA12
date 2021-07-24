@@ -1,0 +1,15 @@
+button {
+height:10vh;
+width: 50vh;
+font-size: 5vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-radius: 3vh;
+background-color:blue;
+color:white;
+border: none;
+}
+
+button:hover{
+background-color: red;
+color: black;
+}
