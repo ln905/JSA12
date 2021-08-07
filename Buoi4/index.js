@@ -1,6 +1,7 @@
 let listTodos = [];
 let id = 0;
 
+
 //acordion
 $(document).ready(function(){
   $(".todo-overview").click(function(){
@@ -10,6 +11,7 @@ $(document).ready(function(){
   });
 });
 
+
 function delSlide(){
   $(".todo-overview").click(function(){
     $(this).find(".button-delete").animate({
@@ -17,6 +19,7 @@ function delSlide(){
     });
   });
 }
+
 
 //create
 $("#button-add").click(function (e) {
@@ -26,16 +29,13 @@ $("#button-add").click(function (e) {
     id: id, 
     name: newTodo,
   };
-  
   listTodos.push(todo);
   localStorage.setItem("listTodos", JSON.stringify(listTodos));
-  
   //create a html code
   let addHTML = `<div class="todo-overview"> 
     <p>${newTodo}</p> 
     <button type="button" class="button-delete" onclick='deleteTask(${id})'></button>
     </div>`
-
   $("#todo-list").append(addHTML);
   clearInput();
   $(".todo-overview").unbind(); 
@@ -44,11 +44,13 @@ $("#button-add").click(function (e) {
   id++; 
 });
 
+
 //clear input
 function clearInput() {
   $("#idUpdate").val("");
   $("#newTodo").val("");
 }
+
 
 //Delete
 function deleteTask(id) {
@@ -64,6 +66,7 @@ function deleteTask(id) {
   pendingTask()
 }
 
+
 function findIndexTask(numberId) {
   let index;
   for (let i = 0; i < listTodos.length; i++) {
@@ -73,6 +76,7 @@ function findIndexTask(numberId) {
   }
   return index;
 }
+
 
 //Read
 function readTask() {
@@ -95,19 +99,22 @@ function readTask() {
   document.querySelector("#todo-list").innerHTML = tasksHTML; 
   pendingTask()
   }
-  
 }
+
 
 //Thong bao ve so task
 function pendingTask(){
   document.getElementById('pending-task').innerHTML = 'You have '+listTodos.length+' pending tasks';
 }
 
+
 //clear all 
 $("#button-clear").click(function(){
   $(".todo-overview").remove()
   localStorage.removeItem("listTodos");
   pendingTask()
+  clearInput()
 })
+
 
 readTask();
