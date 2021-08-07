@@ -76,20 +76,26 @@ function findIndexTask(numberId) {
 
 //Read
 function readTask() {
-  listTodos = localStorage.getItem("listTodos"); 
-  listTodos = JSON.parse(listTodos); 
-  let tasksHTML = "";
-  for (element of listTodos) {
-    console.log(element);
-    tasksHTML += `
-    <div class="todo-overview"> 
-    <p>${element.name}</p> 
-    <button type="button" class="button-delete" onclick='deleteTask(${element.id})'></button>
-    </div>
-    `
-  }
+  listTodos = JSON.parse(localStorage.getItem("listTodos")); 
+  if (listTodos === null){
+    console.log("kcsp")
+    return listTodos = []
+  } else 
+  {
+    let tasksHTML = "";
+    for (element of listTodos) {
+      console.log(element);
+      tasksHTML += `
+      <div class="todo-overview"> 
+      <p>${element.name}</p> 
+      <button type="button" class="button-delete" onclick='deleteTask(${element.id})'></button>
+      </div>
+      `
+    }
   document.querySelector("#todo-list").innerHTML = tasksHTML; 
   pendingTask()
+  }
+  
 }
 
 //Thong bao ve so task
